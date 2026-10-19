@@ -19,7 +19,8 @@
     "README.md",
     "README.zh-CN.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "VALIDATION.md"
   ],
   "pi": {
     "extensions": [
@@ -45,5 +46,13 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HFrancisla/pi-schema-compat.git"
+  },
+  "homepage": "https://github.com/HFrancisla/pi-schema-compat#readme",
+  "bugs": {
+    "url": "https://github.com/HFrancisla/pi-schema-compat/issues"
   }
 }
