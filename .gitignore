@@ -1,0 +1,14 @@
+node_modules/
+*.tgz
+coverage/
+.DS_Store
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+
+# Local configuration and generated files
+dist/
+.env
+.env.*
+!.env.example

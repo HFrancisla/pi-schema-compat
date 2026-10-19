@@ -1,0 +1,49 @@
+{
+  "name": "@hfrancisla/pi-schema-compat",
+  "version": "0.1.0",
+  "description": "Fix missing required arrays in JSON Schema tool definitions for Pi and strict OpenAI-compatible gateways.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Francisla.H <hfrancisla@gmail.com>",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "json-schema",
+    "openai-compatible",
+    "tool-calling",
+    "deepseek"
+  ],
+  "files": [
+    "index.js",
+    "schema.js",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=1.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check index.js && node --check schema.js",
+    "verify": "npm run check && npm test",
+    "prepack": "npm run verify"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
